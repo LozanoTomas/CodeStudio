@@ -1,0 +1,580 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 200;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* header */ 
+/* colores */
+/*  #2E93A7
+    #1A2226
+    #034159
+    #025951
+    #02735E
+    #038C3E
+    #0CF25D*/
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    background-color: #034159; /* #034159 */
+    padding: 2rem;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.nombre {
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin-left: 100rem;
+}
+
+li a:hover {
+    background-color: white;
+    color: #1A2226;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    padding: 10px 50px;
+    background-color: #1A2226;
+    border-radius: 50px;
+}
+
+/* grids */
+
+.grid-contenedor {
+    display: grid;
+    grid-template-rows: auto auto 24rem 55rem 70rem 70rem 70rem auto 90rem 75rem auto;
+    grid-template-areas: 
+    "header header header"
+    "comienzo imagen imagen"
+    "texto texto texto"
+    "como como como"
+    "largo picture picture"
+    "vuelta long long"
+    "txt img2 img2"
+    "nosotros nosotros nosotros"
+    "ventaja ventaja ventaja"
+    "contactx contactx contactx"
+    "fot fot fot";
+}
+
+.grid-header {
+    grid-area: header;
+}
+
+.grid-inicio {
+    grid-area: comienzo;
+    background-color: #02735E;
+}
+
+.grid-muestra {
+    grid-area: imagen;
+    background-color: #02735E;
+}
+
+.grid-textoinfo {
+    grid-area: texto;
+    background-color: #034159;
+}
+
+.grid-explicaciones {
+    grid-area: como;
+    background-color: #1A2226;
+}
+
+.grid-info {
+    grid-area: largo;
+    background-image: linear-gradient(to left bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-img {
+    grid-area: picture;
+    background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-infovuelta {
+    grid-area: long;
+    background-image: linear-gradient(to right top, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-imgvuelta {
+    grid-area: vuelta;
+    background-image: linear-gradient(to left top, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-info2 {
+    grid-area: txt;
+    background-image: linear-gradient(to left bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-img2 {
+    grid-area: img2;
+    background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+}
+
+.grid-nosotros {
+    grid-area: nosotros;
+    background-color: #1A2226;
+}
+
+.grid-ventajas {
+    grid-area: ventaja;
+    background-color: #1A2226;
+}
+
+.grid-contact {
+    grid-area: contactx;
+    background-color: #034159;
+}
+
+.grid-footer {
+    grid-area: fot;
+    background-color: #034159;
+}
+
+/* main primer pagina */ 
+
+.inicio {
+    margin-left: 7rem;
+    margin-top: 6rem;
+}
+
+h1 {
+    font-size: 7rem;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 10px black;
+}
+
+.slogan {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dentro {
+    font-size: 2rem;
+    color: white;
+    padding: 12px 50px;
+    background-color: #1A2226;
+    border-radius: 50px;
+}
+
+.botones {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.dentro:hover {
+    background-color: white;
+    color: #1A2226;
+}
+
+.imagen-portada {
+    width: 600px;
+    height: 500px;
+    border: 5px solid #1A2226;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 12rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
+
+/* primer seccion info */
+
+.texto-informativo {
+    font-size: 2.2rem;
+    text-align: justify;
+    margin-top: 6rem;
+    margin-left: 27rem;
+    margin-right: 27rem;
+    color: #0CF25D;
+}
+
+/* segunda seccion */
+
+.grupo {
+    text-align: center;
+}
+
+.trabajo {
+    font-size: 5rem;
+    margin-top: 5rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.infotext {
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    color: white;
+}
+
+.numero {
+    background-color: #02735E; /*#2E93A7*/
+    display: inline-block;
+    border-radius: 100%;
+    padding: 2.5rem;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.textin {
+    font-size: 1.8rem;
+    display: flex;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.pasos {
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    width: 374px;
+}
+
+/* seccion tipos de paginas web */
+
+.titulo-tipospag {
+    font-size: 6rem;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.informacion {
+    font-size: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    text-align: justify;
+    color: white;
+}
+
+.informacion2 {
+    font-size: 2rem;
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    text-align: justify;
+    color: white;
+}
+
+.img-titulo {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 4rem;
+}
+
+.minititulos {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.ejemplos {
+    border: 5px solid #1A2226;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.img-titulovuelta {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+}
+
+/* seccion sobre nosotros 
+
+.abrazo {
+    text-align: center;
+}
+
+.titulo-nosotros {
+    font-size: 5rem;
+    margin-top: 4rem;
+    color: white;
+}
+
+.descripcion {
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.proyectos {
+    font-size: 3rem;
+    margin-left: 6rem;
+}
+
+.proyectoimg {
+    width: 300px;
+    height: 300px;
+} 
+*/
+
+/* seccion ventajas */
+
+.ventaja {
+    text-align: center;
+    margin-top: 5rem;
+    color: white;
+}
+
+.ventajuchi {
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+.beneficios {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.imgs {
+    width: 100px;
+    height: 100px;
+    background-color: #02735E;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.textito {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+}
+
+.bene {
+    display: inline-block;
+    width: 371px;
+    margin-top: 7rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.grupete {
+    text-align: center;
+}
+
+/* seccion contacto*/
+
+.contix {
+    justify-content: center;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.ponte {
+    font-family: sans-serif;
+    font-size: 6rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+.pp {
+    font-size: 2rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+.form {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 5em 1.5em;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form_title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 1.4em;
+    font-family: sans-serif;
+}
+
+.form_input {
+    font-size: 1.6rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #1A2226;
+    border-radius: 0.2em;
+}
+
+.form_input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form_cta {
+    background-color: #02735E;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* footer */ 
+
+.copy {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+/* boton scroll */
+
+#botonarriba {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 80px;
+    transition: all 1s;
+}
+
+/* media queries */
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .nombre {
+        font-size: 2rem;
+        margin-left: 2rem;
+        color: white;
+    }
+    
+    ul {
+        list-style: none;
+        margin-left: 22rem;
+    }
+
+    /* main primer pagina */
+
+    .inicio {
+        margin-left: 2rem;
+        margin-top: 7rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+    
+    .slogan {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        color: white;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .dentro {
+        font-size: 2rem;
+        color: white;
+        padding: 10px 20px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+    
+    .botones {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    
+    .dentro:hover {
+        background-color: white;
+        color: #1A2226;
+    }
+    
+    .imagen-portada {
+        width: 320px;
+        height: 350px;
+        border: 5px solid #1A2226;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+
+    /* primer seccion info */
+
+    .texto-informativo {
+        font-size: 2.2rem;
+        text-align: justify;
+        margin-top: 6rem;
+        margin-left: 1rem;
+        color: #0CF25D;
+        width: 840px;
+    }
+}
