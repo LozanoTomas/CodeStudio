@@ -503,8 +503,8 @@ a {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .logo {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
     
     .nombre {
@@ -515,7 +515,33 @@ a {
     
     ul {
         list-style: none;
-        margin-left: 22rem;
+        margin-left: 5rem;
+    }
+
+    li a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        padding: 2.5px 25px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+
+    .grid-contenedor {
+        display: grid;
+        grid-template-rows: auto auto 24rem 55rem 70rem 70rem 70rem auto 90rem 75rem auto;
+        grid-template-areas: 
+        "header header header"
+        "comienzo imagen imagen"
+        "texto texto texto"
+        "como como como"
+        "largo picture picture"
+        "vuelta long long"
+        "txt img2 img2"
+        "nosotros nosotros nosotros"
+        "ventaja ventaja ventaja"
+        "contactx contactx contactx"
+        "fot fot fot";
     }
 
     /* main primer pagina */
@@ -526,21 +552,21 @@ a {
     }
     
     h1 {
-        font-size: 4rem;
+        font-size: 2rem;
         color: white;
         font-family: sans-serif;
         text-shadow: 1px 1px 10px black;
     }
     
     .slogan {
-        font-size: 2rem;
+        font-size: 0.8rem;
         margin-bottom: 5rem;
         color: white;
         text-shadow: 1px 1px 10px black;
     }
 
     .dentro {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
         padding: 10px 20px;
         background-color: #1A2226;
@@ -563,7 +589,6 @@ a {
         border: 5px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 2rem;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
     }
 
