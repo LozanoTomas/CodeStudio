@@ -63,7 +63,7 @@ li a {
 
 .grid-contenedor {
     display: grid;
-    grid-template-rows: auto auto 24rem 55rem 70rem 70rem 70rem auto 90rem 75rem auto;
+    grid-template-rows: auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
     grid-template-areas: 
     "header header header"
     "comienzo imagen imagen"
@@ -210,7 +210,7 @@ a {
 .texto-informativo {
     font-size: 2.2rem;
     text-align: justify;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-left: 27rem;
     margin-right: 27rem;
     color: #0CF25D;
@@ -502,37 +502,13 @@ a {
 /* mobile */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .nombre {
-        font-size: 2rem;
-        margin-left: 2rem;
-        color: white;
-    }
-    
-    ul {
-        list-style: none;
-        margin-left: 5rem;
-    }
-
-    li a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: white;
-        padding: 2.5px 25px;
-        background-color: #1A2226;
-        border-radius: 50px;
-    }
-
     .grid-contenedor {
         display: grid;
-        grid-template-rows: auto auto 24rem 55rem 70rem 70rem 70rem auto 90rem 75rem auto;
+        grid-template-rows: auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
         grid-template-areas: 
         "header header header"
-        "comienzo imagen imagen"
+        "comienzo comienzo comienzo"
+        "imagen imagen imagen"
         "texto texto texto"
         "como como como"
         "largo picture picture"
@@ -544,62 +520,79 @@ a {
         "fot fot fot";
     }
 
-    /* main primer pagina */
+    .contenedor {
+        display: flex;
+        align-items: center;
+        background-color: #034159; /* #034159 */
+        padding: 1rem;
+    }
 
-    .inicio {
-        margin-left: 2rem;
-        margin-top: 7rem;
+    .logo {
+        width: 35px;
+        height: 35px;
     }
     
+    .nombre {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        color: white;
+    }
+    
+    ul {
+        list-style: none;
+        margin-left: 5rem;
+    }
+    
+    li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        padding: 3px 25px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+
+    /* main primer pagina */ 
+
+    .inicio {
+        margin-left: 1rem;
+        margin-top: 3.3rem;
+    }
+
     h1 {
         font-size: 2rem;
         color: white;
         font-family: sans-serif;
         text-shadow: 1px 1px 10px black;
     }
-    
+
     .slogan {
-        font-size: 0.8rem;
-        margin-bottom: 5rem;
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
         color: white;
         text-shadow: 1px 1px 10px black;
     }
 
     .dentro {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: white;
-        padding: 10px 20px;
+        padding: 3px 20px;
         background-color: #1A2226;
         border-radius: 50px;
     }
-    
+
     .botones {
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: 0.1rem;
     }
-    
-    .dentro:hover {
-        background-color: white;
-        color: #1A2226;
-    }
-    
+
     .imagen-portada {
-        width: 320px;
-        height: 350px;
-        border: 5px solid #1A2226;
+        width: 200px;
+        height: 150px;
+        border: 3px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
-    }
-
-    /* primer seccion info */
-
-    .texto-informativo {
-        font-size: 2.2rem;
-        text-align: justify;
-        margin-top: 6rem;
         margin-left: 1rem;
-        color: #0CF25D;
-        width: 840px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
     }
 }
