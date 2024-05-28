@@ -105,37 +105,38 @@ li a {
 
 .grid-tipos {
     grid-area: page;
-    background-image: radial-gradient(circle, #025951, #005f55, #006658, #006c5b, #02735e);
+    background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-info {
     grid-area: largo;
-    background-image: linear-gradient(to left bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-img {
     grid-area: picture;
-    background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+    /*background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);*/
 }
 
 .grid-infovuelta {
     grid-area: long;
-    background-image: linear-gradient(to right top, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-imgvuelta {
     grid-area: vuelta;
-    background-image: linear-gradient(to left top, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-info2 {
     grid-area: txt;
-    background-image: linear-gradient(to left bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-img2 {
     grid-area: img2;
-    background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);
+    background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-nosotros {
@@ -543,6 +544,42 @@ a {
         "contactx contactx contactx"
         "fot fot fot";
     }
+    
+    .grid-tipos {
+        grid-area: page;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-info {
+        grid-area: largo;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-img {
+        grid-area: picture;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+        /*background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);*/
+    }
+    
+    .grid-infovuelta {
+        grid-area: long;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-imgvuelta {
+        grid-area: vuelta;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-info2 {
+        grid-area: txt;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-img2 {
+        grid-area: img2;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
 
     .contenedor {
         display: flex;
@@ -641,12 +678,12 @@ a {
         margin-top: 5rem;
         color: white;
         font-family: sans-serif;
-        margin-left: 2.5rem;
+        margin-left: 2.8rem;
     }
 
     .infotext {
         font-size: 1.8rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         margin-top: 4rem;
         color: white;
         width: 400px;
@@ -688,7 +725,7 @@ a {
 
     .titulo-tipospag {
         font-size: 4rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: 3rem;
         color: white;
         font-family: sans-serif;
@@ -699,7 +736,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -709,7 +746,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -719,7 +756,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -736,7 +773,7 @@ a {
         font-size: 2.5rem;
         margin-bottom: 2rem;
         color: white;
-        margin-left: 13rem;
+        margin-left: 12rem;
     }
     
     .ejemplos {
