@@ -504,7 +504,7 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .grid-contenedor {
         display: grid;
-        grid-template-rows: auto auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
+        grid-template-rows: auto 29rem auto auto 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
         grid-template-areas: 
         "header header header"
         "comienzo comienzo comienzo"
@@ -528,24 +528,24 @@ a {
     }
 
     .logo {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
     }
     
     .nombre {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: 2rem;
         color: white;
     }
     
     ul {
         list-style: none;
-        margin-left: 8rem;
+        margin-left: 9rem;
     }
     
     li a {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: white;
         padding: 3px 25px;
         background-color: #1A2226;
@@ -567,7 +567,7 @@ a {
     }
 
     .slogan {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 2rem;
         color: white;
         text-shadow: 1px 1px 10px black;
@@ -587,12 +587,22 @@ a {
     }
 
     .imagen-portada {
-        width: 400px;
+        width: 380px;
         height: 300px;
         border: 3px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
         margin-left: 1rem;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+
+    /* primer seccion info */
+
+    .texto-informativo {
+        font-size: 1.8rem;
+        text-align: justify;
+        color: #0CF25D;
+        width: 400px;
+        margin-left: 1rem;
     }
 }
