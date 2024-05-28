@@ -504,7 +504,7 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .grid-contenedor {
         display: grid;
-        grid-template-rows: auto 29rem auto auto 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
+        grid-template-rows: auto 29rem auto auto 165rem 70rem 70rem 75rem auto 95rem 75rem auto;
         grid-template-areas: 
         "header header header"
         "comienzo comienzo comienzo"
@@ -592,7 +592,7 @@ a {
         border: 3px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
     }
 
@@ -604,5 +604,59 @@ a {
         color: #0CF25D;
         width: 400px;
         margin-left: 1rem;
+    }
+
+    /* segunda seccion */
+
+    .grupo {
+        text-align: justify;
+    }
+
+    .trabajo {
+        font-size: 4rem;
+        margin-top: 5rem;
+        color: white;
+        font-family: sans-serif;
+        margin-left: 2rem;
+    }
+
+    .infotext {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        color: white;
+        width: 400px;
+    }
+
+    .numero {
+        background-color: #02735E; /*#2E93A7*/
+        display: inline-block;
+        border-radius: 100%;
+        padding: 2.5rem;
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: white;
+    }
+
+    .textin {
+        font-size: 1.8rem;
+        display: flex;
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+    }
+
+    .pasos {
+        margin-top: 7rem;
+        margin-left: 2rem;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        width: 374px;
     }
 }
