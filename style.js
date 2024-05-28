@@ -1,4 +1,4 @@
-/*function irArriba(pxPanttalla){
+function irArriba(pxPanttalla){
     window.addEventListener("scroll", () => {
         var scroll = document.documentElement.scrollTop;
         console.log(scroll);
