@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* header */ 
 /* colores */
 /*  #2E93A7
@@ -511,7 +516,7 @@ a {
 
 /* boton scroll */
 
-#botonarriba {
+/*#botonarriba {
     position: fixed;
     bottom: 20px;
     right: -100px;
@@ -858,7 +863,7 @@ a {
         color: white;
         margin-top: 3rem;
         text-align: left;
-        margin-left: 5rem;
+        margin-left: 4.5rem;
     }
 
     .pp {
@@ -866,6 +871,7 @@ a {
         color: white;
         margin-top: 3rem;
         width: 400px;
+        margin-left: 1rem;
     }
 
     .form {
@@ -874,7 +880,7 @@ a {
         max-width: 380px;
         border-radius: 1em;
         padding: 5em 1.5em;
-        margin-left: 1rem;
+        margin-left: 1.4rem;
         margin-top: 4rem;
     }
 
@@ -924,6 +930,7 @@ a {
         font-size: 1.5rem;
         color: white;
         text-align: left;
-        margin-left: 1rem;
+        margin-left: 1.1rem;
     }
+
 }
