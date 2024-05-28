@@ -63,12 +63,13 @@ li a {
 
 .grid-contenedor {
     display: grid;
-    grid-template-rows: auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
+    grid-template-rows: auto auto 24rem 59rem auto 70rem 70rem 80rem auto 95rem 75rem auto;
     grid-template-areas: 
     "header header header"
     "comienzo imagen imagen"
     "texto texto texto"
     "como como como"
+    "page page page"
     "largo picture picture"
     "vuelta long long"
     "txt img2 img2"
@@ -100,6 +101,11 @@ li a {
 .grid-explicaciones {
     grid-area: como;
     background-color: #1A2226;
+}
+
+.grid-tipos {
+    grid-area: page;
+    background-image: radial-gradient(circle, #025951, #005f55, #006658, #006c5b, #02735e);
 }
 
 .grid-info {
@@ -275,15 +281,16 @@ a {
 .titulo-tipospag {
     font-size: 6rem;
     margin-left: 7rem;
-    margin-top: 3rem;
     color: white;
     font-family: sans-serif;
+    margin-top: 2rem;
+    text-shadow: 1px 1px 10px black;
 }
 
 .informacion {
     font-size: 2rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
     margin-left: 6rem;
     margin-right: 6rem;
     text-align: justify;
@@ -292,8 +299,18 @@ a {
 
 .informacion2 {
     font-size: 2rem;
-    margin-top: 18rem;
-    margin-bottom: 18rem;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    text-align: justify;
+    color: white;
+}
+
+.informacion3 {
+    font-size: 2rem;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
     margin-left: 6rem;
     margin-right: 6rem;
     text-align: justify;
@@ -374,6 +391,8 @@ a {
 .beneficios {
     font-size: 2rem;
     margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .imgs {
@@ -428,6 +447,7 @@ a {
     font-size: 2rem;
     color: white;
     margin-top: 3rem;
+    margin-right: 4rem;
 }
 
 .form {
@@ -504,16 +524,20 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .grid-contenedor {
         display: grid;
-        grid-template-rows: auto 29rem auto auto 165rem 70rem 70rem 75rem auto 95rem 75rem auto;
+        grid-template-rows: auto 29rem auto auto 165rem auto auto auto auto auto auto auto auto 95rem 75rem auto;
         grid-template-areas: 
         "header header header"
         "comienzo comienzo comienzo"
         "imagen imagen imagen"
         "texto texto texto"
         "como como como"
-        "largo picture picture"
-        "vuelta long long"
-        "txt img2 img2"
+        "page page page"
+        "picture picture picture"
+        "largo largo largo"
+        "vuelta vuelta vuelta"
+        "long long long"
+        "img2 img2 img2"
+        "txt txt txt"
         "nosotros nosotros nosotros"
         "ventaja ventaja ventaja"
         "contactx contactx contactx"
@@ -617,12 +641,12 @@ a {
         margin-top: 5rem;
         color: white;
         font-family: sans-serif;
-        margin-left: 2rem;
+        margin-left: 2.5rem;
     }
 
     .infotext {
         font-size: 1.8rem;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         margin-top: 4rem;
         color: white;
         width: 400px;
@@ -658,5 +682,74 @@ a {
         display: inline-block;
         align-items: center;
         width: 374px;
+    }
+
+    /* seccion tipos de paginas web */
+
+    .titulo-tipospag {
+        font-size: 4rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+    
+    .informacion {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.5rem;
+        width: 400px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion2 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.5rem;
+        width: 400px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion3 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.5rem;
+        width: 400px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .img-titulo {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+    }
+    
+    .minititulos {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: white;
+        margin-left: 13rem;
+    }
+    
+    .ejemplos {
+        border: 5px solid #1A2226;
+        width: 400px;
+        height: 300px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+    
+    .img-titulovuelta {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
     }
 }
