@@ -504,7 +504,7 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .grid-contenedor {
         display: grid;
-        grid-template-rows: auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
+        grid-template-rows: auto auto auto 24rem 59rem 70rem 70rem 75rem auto 95rem 75rem auto;
         grid-template-areas: 
         "header header header"
         "comienzo comienzo comienzo"
@@ -540,7 +540,7 @@ a {
     
     ul {
         list-style: none;
-        margin-left: 5rem;
+        margin-left: 8rem;
     }
     
     li a {
@@ -555,28 +555,28 @@ a {
     /* main primer pagina */ 
 
     .inicio {
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-top: 3.3rem;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 4rem;
         color: white;
         font-family: sans-serif;
         text-shadow: 1px 1px 10px black;
     }
 
     .slogan {
-        font-size: 0.7rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
         color: white;
         text-shadow: 1px 1px 10px black;
     }
 
     .dentro {
-        font-size: 0.8rem;
+        font-size: 2rem;
         color: white;
-        padding: 3px 20px;
+        padding: 3px 25px;
         background-color: #1A2226;
         border-radius: 50px;
     }
@@ -587,8 +587,8 @@ a {
     }
 
     .imagen-portada {
-        width: 200px;
-        height: 150px;
+        width: 400px;
+        height: 300px;
         border: 3px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
