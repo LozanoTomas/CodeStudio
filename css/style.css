@@ -525,9 +525,390 @@ a {
 }
 
 /* media queries */
-/* mobile */
+/* mobile S */
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-rows: auto 29rem auto auto 175rem auto auto auto auto auto auto auto auto 212rem 80rem auto;
+        grid-template-areas: 
+        "header header header"
+        "comienzo comienzo comienzo"
+        "imagen imagen imagen"
+        "texto texto texto"
+        "como como como"
+        "page page page"
+        "picture picture picture"
+        "largo largo largo"
+        "vuelta vuelta vuelta"
+        "long long long"
+        "img2 img2 img2"
+        "txt txt txt"
+        "nosotros nosotros nosotros"
+        "ventaja ventaja ventaja"
+        "contactx contactx contactx"
+        "fot fot fot";
+    }
+    
+    .grid-tipos {
+        grid-area: page;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-info {
+        grid-area: largo;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-img {
+        grid-area: picture;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+        /*background-image: linear-gradient(to right bottom, #025951, #005e54, #006256, #006759, #006c5b, #007961, #008565, #009269, #00aa6d, #00c26c, #00da67, #0cf25d);*/
+    }
+    
+    .grid-infovuelta {
+        grid-area: long;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-imgvuelta {
+        grid-area: vuelta;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-info2 {
+        grid-area: txt;
+        background-image: linear-gradient(to bottom, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+    
+    .grid-img2 {
+        grid-area: img2;
+        background-image: linear-gradient(to top, #025951, #005f55, #006658, #006c5b, #02735e);
+    }
+
+    .contenedor {
+        display: flex;
+        align-items: center;
+        background-color: #034159; /* #034159 */
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nombre {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        color: white;
+    }
+    
+    ul {
+        list-style: none;
+        margin-left: 1rem;
+    }
+    
+    li a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: white;
+        padding: 3px 25px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+
+    /* main primer pagina */ 
+
+    .inicio {
+        margin-left: 1.2rem;
+        margin-top: 3.3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .slogan {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .dentro {
+        font-size: 2rem;
+        color: white;
+        padding: 3px 25px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+
+    .botones {
+        display: inline-block;
+        margin-left: 0.1rem;
+    }
+
+    .imagen-portada {
+        width: 300px;
+        height: 250px;
+        border: 3px solid #1A2226;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+
+    /* primer seccion info */
+
+    .texto-informativo {
+        font-size: 1.3rem;
+        text-align: justify;
+        color: #0CF25D;
+        width: 310px;
+        margin-left: 0.2rem;
+        margin-top: 1rem;
+    }
+
+    /* segunda seccion */
+
+    .grupo {
+        text-align: justify;
+    }
+
+    .trabajo {
+        font-size: 3.5rem;
+        margin-top: 5rem;
+        color: white;
+        font-family: sans-serif;
+        margin-left: 0.5rem;
+    }
+
+    .infotext {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        margin-top: 4rem;
+        color: white;
+        width: 300px;
+    }
+
+    .numero {
+        background-color: #02735E; /*#2E93A7*/
+        display: inline-block;
+        border-radius: 100%;
+        padding: 2.5rem;
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: white;
+    }
+
+    .textin {
+        font-size: 1.8rem;
+        display: flex;
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+    }
+
+    .pasos {
+        margin-top: 7rem;
+        margin-left: 0rem;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        width: 320px;
+    }
+
+    /* seccion tipos de paginas web */
+
+    .titulo-tipospag {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+    
+    .informacion {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.2rem;
+        width: 300px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion2 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.2rem;
+        width: 300px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion3 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1.2rem;
+        width: 300px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .img-titulo {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 0.3rem;
+    }
+    
+    .minititulos {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: white;
+        margin-left: 9rem;
+    }
+    
+    .ejemplos {
+        border: 5px solid #1A2226;
+        width: 315px;
+        height: 250px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+    
+    .img-titulovuelta {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 0.2rem;
+    }
+
+    /* seccion ventajas */
+
+    .ventaja {
+        text-align: left;
+        margin-top: 5rem;
+        color: white;
+    }
+
+    .ventajuchi {
+        font-size: 4rem;
+        margin-left: 5rem;
+        font-family: sans-serif;
+    }
+
+    .beneficios {
+        font-size: 1.6rem;
+        margin-top: 4rem;
+        margin-left: 0.5rem;
+        width: 320px;
+    }
+
+    .imgs {
+        width: 100px;
+        height: 100px;
+        background-color: #02735E;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+
+    .subtitle {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: white;
+    }
+
+    .textito {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        color: white;
+        display: flex;
+    }
+
+    .bene {
+        display: inline-block;
+        width: 318px;
+        margin-top: 7rem;
+        margin-left: 0.2rem;
+        text-align: center;
+    }
+
+    .grupete {
+        text-align: left;
+    }
+
+    /* seccion contacto*/
+
+    .contix {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .ponte {
+        font-family: sans-serif;
+        font-size: 3.5rem;
+        color: white;
+        margin-top: 3rem;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .pp {
+        font-size: 1.8rem;
+        color: white;
+        margin-top: 3rem;
+        width: 310px;
+        margin-left: 0.2rem;
+    }
+
+    .form {
+        background-color: white;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 1em;
+        padding: 5em 1.5em;
+        margin-left: 1rem;
+        margin-top: 4rem;
+    }
+
+    /* boton scroll */
+
+    #botonarriba {
+        position: fixed;
+        bottom: 20px;
+        right: -100px;
+        width: 50px;
+        transition: all 1s;
+    }
+
+    /* footer */ 
+
+    .copy {
+        font-size: 1.2rem;
+        color: white;
+        text-align: left;
+        margin-top: 0.7rem;
+        margin-left: 0.5rem;
+    }
+}
+
+/* mobile L */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
     .grid-contenedor {
         display: grid;
         grid-template-rows: auto 29rem auto auto 165rem auto auto auto auto auto auto auto auto 208rem 80rem auto;
@@ -653,12 +1034,12 @@ a {
     }
 
     .imagen-portada {
-        width: 380px;
+        width: 390px;
         height: 300px;
         border: 3px solid #1A2226;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.5rem;
+        margin-left: 1.8rem;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
     }
 
@@ -669,7 +1050,7 @@ a {
         text-align: justify;
         color: #0CF25D;
         width: 400px;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
     }
 
     /* segunda seccion */
@@ -688,7 +1069,7 @@ a {
 
     .infotext {
         font-size: 1.8rem;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
         margin-top: 4rem;
         color: white;
         width: 400px;
@@ -719,7 +1100,7 @@ a {
 
     .pasos {
         margin-top: 7rem;
-        margin-left: 2rem;
+        margin-left: 2.5rem;
         text-align: center;
         display: inline-block;
         align-items: center;
@@ -730,7 +1111,7 @@ a {
 
     .titulo-tipospag {
         font-size: 4rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-top: 3rem;
         color: white;
         font-family: sans-serif;
@@ -741,7 +1122,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.2rem;
+        margin-left: 1.4rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -751,7 +1132,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.2rem;
+        margin-left: 1.4rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -761,7 +1142,7 @@ a {
         font-size: 1.8rem;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 1.2rem;
+        margin-left: 1.4rem;
         width: 400px;
         text-align: justify;
         color: white;
@@ -771,14 +1152,14 @@ a {
         text-align: left;
         margin-top: 5rem;
         margin-bottom: 5rem;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
     }
     
     .minititulos {
         font-size: 2.5rem;
         margin-bottom: 2rem;
         color: white;
-        margin-left: 12rem;
+        margin-left: 13rem;
     }
     
     .ejemplos {
@@ -812,7 +1193,7 @@ a {
     .beneficios {
         font-size: 1.8rem;
         margin-top: 4rem;
-        margin-left: 1.2rem;
+        margin-left: 1.6rem;
         width: 400px;
     }
 
@@ -841,7 +1222,7 @@ a {
         display: inline-block;
         width: 371px;
         margin-top: 7rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
         text-align: center;
     }
 
@@ -863,7 +1244,7 @@ a {
         color: white;
         margin-top: 3rem;
         text-align: left;
-        margin-left: 4.5rem;
+        margin-left: 5rem;
     }
 
     .pp {
@@ -871,57 +1252,27 @@ a {
         color: white;
         margin-top: 3rem;
         width: 400px;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
     }
 
     .form {
         background-color: white;
         width: 90%;
-        max-width: 380px;
+        max-width: 400px;
         border-radius: 1em;
         padding: 5em 1.5em;
         margin-left: 1.4rem;
         margin-top: 4rem;
     }
 
-    .form_container {
-        width: 100%;
-        display: grid;
-        gap: 1em;
-        grid-auto-columns: 100%;
-    }
+    /* boton scroll */
 
-    .form_title {
-        text-align: center;
-        font-size: 5rem;
-        margin-bottom: 1.4em;
-        font-family: sans-serif;
-    }
-
-    .form_input {
-        font-size: 1.6rem;
-        padding: .8em 1em;
-        outline: none;
-        border: none;
-        border: 1px solid #1A2226;
-        border-radius: 0.2em;
-    }
-
-    .form_input--message {
-        resize: none;
-        padding: 1.8em 1em;
-        margin-bottom: .5em;
-    }
-
-    .form_cta {
-        background-color: #02735E;
-        font-size: 2rem;
-        color: white;
-        border: none;
-        padding: .7em 0;
-        border-radius: .2em;
-        cursor: pointer;
-        font-weight: 400;
+    #botonarriba {
+        position: fixed;
+        bottom: 20px;
+        right: -100px;
+        width: 60px;
+        transition: all 1s;
     }
 
     /* footer */ 
@@ -930,7 +1281,293 @@ a {
         font-size: 1.5rem;
         color: white;
         text-align: left;
-        margin-left: 1.1rem;
+        margin-left: 1.8rem;
     }
+
+}
+
+/*tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-rows: auto 45rem 31rem 95rem auto auto auto auto auto auto auto auto 137rem 80rem auto;
+        grid-template-areas: 
+        "header header header"
+        "comienzo imagen imagen"
+        "texto texto texto"
+        "como como como"
+        "page page page"
+        "picture picture picture"
+        "largo largo largo"
+        "vuelta vuelta vuelta"
+        "long long long"
+        "img2 img2 img2"
+        "txt txt txt"
+        "nosotros nosotros nosotros"
+        "ventaja ventaja ventaja"
+        "contactx contactx contactx"
+        "fot fot fot";
+    }
+    
+    ul {
+        list-style: none;
+        margin-left: 22rem;
+    }
+
+    /* main primer pagina */ 
+
+    .inicio {
+        margin-left: 2rem;
+        margin-top: 6rem;
+        display: inlinebl;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .slogan {
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+        color: white;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .dentro {
+        font-size: 2rem;
+        color: white;
+        padding: 8px 35px;
+        background-color: #1A2226;
+        border-radius: 50px;
+    }
+
+    .imagen-portada {
+        width: 300px;
+        height: 290px;
+        border: 5px solid #1A2226;
+        margin: 0;
+        margin-top: 7rem;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+
+    /* primer seccion info */
+
+    .texto-informativo {
+        font-size: 2.2rem;
+        text-align: justify;
+        margin-top: 4rem;
+        margin-left: 3rem;
+        color: #0CF25D;
+        width: 700px;
+    }
+
+    /* segunda seccion */
+
+    .grupo {
+        text-align: left;
+    }
+
+    .trabajo {
+        font-size: 5rem;
+        margin-top: 5rem;
+        color: white;
+        font-family: sans-serif;
+        margin-left: 15rem;
+    }
+
+    .infotext {
+        font-size: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 4rem;
+        color: white;
+        width: 700px;
+    }
+
+    .pasos {
+        margin-top: 7rem;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        width: 366px;
+    }
+
+    /* seccion tipos de paginas web */
+
+    .titulo-tipospag {
+        font-size: 5rem;
+        margin-left: 12rem;
+        margin-top: 3rem;
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+    
+    .informacion {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 6rem;
+        width: 650px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion2 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 6rem;
+        width: 650px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .informacion3 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 6rem;
+        width: 650px;
+        text-align: justify;
+        color: white;
+    }
+    
+    .img-titulo {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 14rem;
+    }
+    
+    .minititulos {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: white;
+        margin-left: 17rem;
+    }
+    
+    .ejemplos {
+        border: 5px solid #1A2226;
+        width: 500px;
+        height: 400px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    }
+    
+    .img-titulovuelta {
+        text-align: left;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 14rem;
+    }
+
+    /* seccion ventajas */
+
+    .ventaja {
+        text-align: left;
+        margin-top: 5rem;
+        color: white;
+    }
+
+    .ventajuchi {
+        font-size: 5rem;
+        font-family: sans-serif;
+        margin-left: 25rem;
+    }
+
+    .beneficios {
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-left: 4rem;
+        width: 700px;
+    }
+
+    .imgs {
+        width: 100px;
+        height: 100px;
+        background-color: #02735E;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+
+    .subtitle {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+        color: white;
+    }
+
+    .textito {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        color: white;
+        display: flex;
+    }
+
+    .bene {
+        display: inline-block;
+        width: 342px;
+        margin-top: 7rem;
+        margin-left: 0.5rem;
+    }
+
+    .grupete {
+        text-align: center;
+        margin-right: 16.4rem;
+    }
+
+    /* seccion contacto*/
+
+    .contix {
+        justify-content: center;
+        text-align: center;
+        margin-left: 4rem;
+    }
+
+    .ponte {
+        font-family: sans-serif;
+        font-size: 5rem;
+        color: white;
+        margin-top: 3rem;
+        text-align: left;
+        margin-left: 13rem;
+    }
+
+    .pp {
+        font-size: 2rem;
+        color: white;
+        margin-top: 3rem;
+        text-align: left;
+        width: 700px;
+    }
+
+    .form {
+        background-color: white;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 1em;
+        padding: 5em 1.5em;
+        margin: 0;
+        margin-left: 18.1rem;
+        margin-top: 3rem;
+    }
+
+    /* footer */ 
+
+    .copy {
+        font-size: 1.8rem;
+        color: white;
+        text-align: left;
+        margin-left: 15rem;
+    }
+
+}
+
+/*desktop*/ 
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
 
 }
